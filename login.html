@@ -1,0 +1,95 @@
+<html style="background-image: url('loginbg.jpg');background-repeat: no-repeat;background-size: cover;">
+    <style>
+      body{margin: 0px;}  
+        #top{
+    background-color: #c3073f;
+    width: auto;
+    
+    height: 50px;
+}
+#title{
+    /* position: absolute;
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: consolas;
+    padding-left: 150px; */
+
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    top: 9px;
+    font-family: consolas;
+    padding-left: 150px;
+}
+
+#login_form{
+    text-align: center;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    height: 400px;
+    width: 400px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: grey;
+    z-index: 2;
+}
+.login{
+    padding-left: 5px;
+    height: 35px;
+    width: 350px;
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 1px;
+    border-color: grey;
+    margin-top:40px;
+}
+.login:focus{
+    outline: none;
+}
+.button{
+    color: white;
+    font-family: consolas;
+    font-size: 18px;
+    margin-top: 40px;
+    height: 35px;
+    width: 350px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #c3073f;
+    cursor:pointer;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <head>
+        <div id="top">
+            <p id="title">Keep an Eye</p>
+        </div>
+    </head>
+    <title>Keep an Eye - Login</title>
+    <body >
+        <form action="home.html" method="POST">
+        <div id="login_form">
+            <p style=" font-family: Comic Sans MS, Comic Sans, cursive;font-size: 25px;">Login</p>
+            <input class="login" type="email" placeholder="Enter Email" required>
+            <br>
+            <input class="login" type="password" pattern="[A-Za-z0-9]{8,}" placeholder="Enter Password" required>
+            <br>
+            
+            <!-- <button type="submit" onclick="location.href = 'home.html';">Login</button> -->
+            <input class="button"type="submit" value="Login">
+            <p><a href="signup.html" style="text-decoration: none;color: #c3073f;font-family: Comic Sans MS, Comic Sans, cursive;">Create an account?</a></p>
+            
+           
+        </div>
+     </form>   
+    </body>
+</html>

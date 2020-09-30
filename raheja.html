@@ -1,0 +1,185 @@
+<html lang="en">
+<style>
+
+    div{
+    display: block;
+    
+}
+.description{
+    padding-bottom: s0px;
+}
+.address{
+    font-size: 25px;
+    color:grey;
+    margin-bottom: 5px;
+    
+    margin-left: 3px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+        
+    
+}
+.hh1{
+margin-bottom: 0px;
+
+
+}
+.box{border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    border: solid 4px #eaeaea;
+    margin-bottom: 25px;
+    padding: 25px;
+    width: 100%;
+}
+body {
+        margin: 0;
+         font-family: consolas;
+        }
+        .nav{
+            height:50px; 
+            width: 100%;
+            background-color: #c3073f;
+            }
+        .nav-ele{
+        position: relative;
+        color:white;
+        text-decoration: none;
+        font-size: 16px;
+        top: 9px;
+        font-family: consolas;
+        margin-left: 100px;
+        }
+        .nav-sea{
+        position: relative;
+        color:white;
+        text-decoration: none;
+        font-size: 16px;
+        top: 9px;
+        padding: 5px;
+        background-color:#cf0f3f ;
+        font-family: consolas;
+        }
+        button{border: none;background-color: #c3073f;}
+        .nav-sea:hover{cursor:pointer;}
+        .nav-sea:focus{outline: none;}
+        .profile{position: relative;
+        color:white;
+        text-decoration: none;
+        font-size: 16px;
+        top: 9px;
+        font-family: consolas;
+        left: 500px;}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  
+  background-color: inherit;
+  font-family: inherit;
+  position: relative;
+  top: 9px;
+  cursor: pointer; 
+}
+
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 2%;
+  
+  top: 23px;
+  left: 1285px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;cursor: pointer; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;cursor: pointer; 
+}
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color:#d12e56; 
+} 
+
+.nav-ele:focus{outline: none;}
+.btn{
+  padding: 10px;
+  background-color:#d12e56 ;
+  color: snow;
+  margin: 5px;
+}
+
+
+
+
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+</head>
+<body>
+    
+    <div class="nav">
+        <span><a href="home.html" class="nav-ele" style="font-size:22px ;">Keep an Eye</a></span>
+        <a href="#" class="nav-ele">My properties</a>
+        <a href="#" class="nav-ele">About</a>
+        <input type="text" placeholder="Search here" name="search" class="nav-ele" style="margin-left:40px ;"><button type="submit" class="nav-sea"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <!-- <a href="#" class="profile"  ><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></a> -->
+        <span class="dropdown" style="margin-left: 420px;"  >
+            <button  class="dropbtn"><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></button>
+            <span id="myDropdown" class="dropdown-content">
+              <a href="profile.html">Profile</a>
+              
+              <a href="login.html">Log out</a>
+            </span>
+        </span>
+          </div>
+    <div class="image window" data-parallax="scroll">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/housingman-v2/projects/banner_images/1605/original/Raheja_Vistas-Banner.jpg?1481713803" style=" height:45%;width: 100%;">
+    </div>
+   <div class="description"> 
+    <h1 class="box">
+    <div class="hh1">Raheja Vistas
+        <p class="address" >
+            By
+            <span>
+                  K Raheja corp
+            </span></p>
+           <i class="fa fa-map-marker" style="font-size:24px"></i><span class="address"style="font-size: 18px; margin-bottom:5px">Nacharam,Hyderabad</span>
+            
+        
+    </h1>
+
+    <button class="btn">Buy</button>
+    <br>
+    <button class="btn">Click to view photos</button> 
+</div>
+<script src="https://kit.fontawesome.com/4deb563cd0.js"></script>
+</body>
+</html>

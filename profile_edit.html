@@ -1,0 +1,216 @@
+<html>
+    <style>
+#top{
+    background-color: #c3073f;
+    width: auto;
+    margin: -10px;
+    height: 50px;
+}
+#title{
+    position: absolute;
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    top: 9px;
+    font-family: consolas;
+    padding-left: 150px;
+}
+body {
+    margin: 0;
+     font-family: consolas;
+    }
+    .nav{
+        height:50px; 
+        width: 100%;
+        background-color: #c3073f;
+        }
+    .nav-ele{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    font-family: consolas;
+    margin-left: 100px;
+    }
+    .nav-sea{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    padding: 2px;
+    background-color:#cf0f3f ;
+    font-family: consolas;
+    }
+    button{border: none;background-color: #c3073f;}
+    .nav-sea:hover{cursor:pointer;}
+    .nav-sea:focus{outline: none;}
+    .profile{position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    font-family: consolas;
+    left: 500px;}
+  
+  
+  .dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  
+  background-color: inherit;
+  font-family: inherit;
+  position: relative;
+  top: 9px;
+  cursor: pointer; 
+  }
+  
+  
+  .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 2%;
+  
+  top: 23px;
+  left: 1285px;
+  }
+  
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: #ddd;cursor: pointer; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;cursor: pointer; 
+  }
+  ::placeholder { /* Firefox, Chrome, Opera */ 
+  color:#d12e56; 
+  } 
+  
+  .nav-ele:focus{outline: none;}
+  #profile{
+    text-align: center;
+    color: black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    height: 450px;
+    width: 400px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: grey;
+    z-index: 2;
+  }
+  .details{
+    padding-left: 5px;
+    height: 35px;
+    width: 350px;
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 1px;
+    border-color: grey;
+    margin-top:40px;
+  }
+  .details:focus{
+      outline:none;
+  }
+  #em:hover{
+      cursor:not-allowed;
+  }
+  #pp{
+    width: 150px;
+    height: 150px;
+    padding-top: 30px;
+  }
+  #upl{
+      background-image: url('photo_upload.jpg');
+      background-size: 100%;
+      background-position-x: center;
+      background-position-y:center;
+      border-radius: 20pt;
+      border-width: 1pt;
+      border-style: solid;
+      border-color: royalblue;
+      width: 20pt;
+      height: 20pt;
+      z-index: 2;
+      position: absolute;
+      top: 160px;
+      left: 280px;
+  }
+  #save{
+    color: white;
+    text-decoration: none;
+    
+    font-family: consolas;
+    font-size: 18px;
+    height: 35px;
+    width: 60px;
+    z-index: 3;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #c3073f;
+    position: absolute;
+    top: 30px;
+    left: 310px;
+  }
+  #upl:hover,#save:hover{
+    cursor: pointer;
+  }
+    </style>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>     
+    <script src="https://kit.fontawesome.com/4deb563cd0.js"></script>
+    <script>
+        function getfile(){
+            document.getElementById('uplp').click();
+        }
+    </script>
+    <body>
+        <div class="nav">
+            <span><a href="home.html" class="nav-ele" style="font-size:22px ;">Keep an Eye</a></span>
+            <a href="myprop.html" class="nav-ele">My properties</a>
+            <a href="#" class="nav-ele">About</a>
+            <input type="text" placeholder="Search here" name="search" class="nav-ele" style="margin-left:40px;color: #cf0f3f ;"><button type="submit" class="nav-sea"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <!-- <a href="#" class="profile"  ><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></a> -->
+            <span class="dropdown" style="margin-left: 420px;"  >
+                <button  class="dropbtn"><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></button>
+                <span id="myDropdown" class="dropdown-content">
+                  <a href="profile.html">Profile</a>
+                  <a href="login.html">Log out</a>
+                </span>
+            </span>
+        </div>
+        <form action="profile.html" method="POST">
+        <div id="profile">
+            <img id="pp" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ms_ni44c-_TBsdHzF0W5awHaHa%26pid%3DApi&f=1" alt="Profile Picture">
+            <div id="upl" onclick="getfile()"><input id="uplp" style="display: none;" type="file"></div>
+            <input class="details" type="text" value="Full Name" required>
+            <input id="em" class="details" type="email" value="abc@xyz.com" disabled>
+            <input class="details" type="text" value="9999988888" pattern="[0-9]{10}" required>
+            <br>
+            <input type="submit" id="save" value="Save">
+        </div>
+        </form>
+    </body>
+</html>

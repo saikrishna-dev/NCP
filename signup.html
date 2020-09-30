@@ -1,0 +1,125 @@
+<html style="background-image: url('loginbg.jpg');background-repeat: no-repeat;background-size: cover;">
+    <style>
+        body{margin: 0px;}
+        #top{
+    background-color: #c3073f;
+    width: auto;
+
+    height: 50px;
+}
+#title{
+    position: absolute;
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    top: 9px;
+    font-family: consolas;
+    padding-left: 150px;
+}
+#login_form{
+    text-align: center;
+    color: black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    height: 500px;
+    width: 400px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: grey;
+    z-index: 2;
+}
+.login{
+    padding-left: 5px;
+    height: 35px;
+    width: 350px;
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 1px;
+    border-color: grey;
+    margin-top:15px;
+}
+.login:focus{
+    outline: none;
+}
+button{
+    color: white;
+    font-family: consolas;
+    font-size: 18px;
+    margin-top: 40px;
+    height: 35px;
+    width: 350px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #c3073f;
+}
+#cc{
+    position: absolute;
+    top: 349px;
+    height: 35px;
+    width: 50px;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    background-color: white;
+    border-width: 1px;
+    z-index: 2;
+}
+#cc:focus{
+    outline: none;
+}
+#phno{
+    padding-left: 5px;
+    height: 35px;
+    width: 300px;
+    border-style: solid;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-width: 1px;
+    border-color: grey;
+    margin-top:15px;
+    margin-left: 50px;
+}
+#phno:focus{
+    outline: none;
+}
+    </style>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+    <head>
+        <div id="top">
+            <a href="#" id="title">Keep an Eye</p>
+        </div>
+    </head>
+    <title>Keep an Eye - Signup</title>
+    <body>
+        <form action="login.html" method="POST">
+        <div id="login_form">
+            <p>Signup</p>
+            <input class="login" type="text" placeholder="Full Name" required>
+            <br>
+            <input class="login" type="text" placeholder="Username" required>
+            <br>
+            <input class="login" type="email" placeholder="Email" required>
+            <br>
+            <input class="login" type="password" pattern="[A-Za-z0-9].{8,}"placeholder="Password" required>
+            <br>
+            <input class="login" type="password" placeholder="Confirm Password" required>
+            <br>
+            <select id="cc">
+                <option>+91</option>
+            </select>
+            <input id="phno" type="text" pattern="[0-9]{10}" title="Enter a Valid Phone Number" placeholder="Phone Number" required>
+            <br>
+            <button type="submit" style="cursor: pointer;">Register</button>
+        </div>
+        </form>
+    </body>
+</html>

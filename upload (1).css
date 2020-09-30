@@ -1,0 +1,28 @@
+#top{
+    background-color: #c3073f;
+    width: auto;
+    margin: -10px;
+    height: 50px;
+}
+#title{
+    position: absolute;
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    top: 9px;
+    font-family: consolas;
+    padding-left: 150px;
+}
+button{
+    color: white;
+    font-family: consolas;
+    font-size: 18px;
+    margin-top: 300px;
+    height: 35px;
+    width: 350px;
+    margin-left: 205px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #c3073f;
+}

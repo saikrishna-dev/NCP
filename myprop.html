@@ -1,0 +1,166 @@
+<html>
+    <style>
+        #prop1{
+            position: relative;
+            left: 250px;
+            top: 200px;
+            height: 120px;
+            width: 1000px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        #p1{
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 150px;
+            height: 100px;
+        }
+        #pd{
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        body {
+    margin: 0;
+     font-family: consolas;
+    }
+    .nav{
+        height:50px; 
+        width: 100%;
+        background-color: #c3073f;
+        }
+    .nav-ele{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    font-family: consolas;
+    margin-left: 100px;
+    }
+    .nav-sea{
+    position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    padding: 2px;
+    background-color:#cf0f3f ;
+    font-family: consolas;
+    }
+    button{border: none;background-color: #c3073f;}
+    .nav-sea:hover{cursor:pointer;}
+    .nav-sea:focus{outline: none;}
+    .profile{position: relative;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    top: 9px;
+    font-family: consolas;
+    left: 500px;}
+  
+  
+  .dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  
+  background-color: inherit;
+  font-family: inherit;
+  position: relative;
+  top: 9px;
+  cursor: pointer; 
+  }
+  
+  
+  .dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 2%;
+  
+  top: 23px;
+  left: 1285px;
+  }
+  
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: #ddd;cursor: pointer; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;cursor: pointer; 
+  }
+  ::placeholder { /* Firefox, Chrome, Opera */ 
+  color:#d12e56; 
+  } 
+  
+  .nav-ele:focus{outline: none;}
+  .btn{
+    padding: 10px;
+    background-color: #d12e56;
+    color: snow;
+    float: right;
+    margin: 10px;
+    position: relative;
+    right: 200px;
+    top: 30px;
+    cursor: pointer;
+}
+
+    </style>
+        <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>     
+        <script src="https://kit.fontawesome.com/4deb563cd0.js"></script>   
+    <body>
+        <div class="nav">
+            <span><a href="home.html" class="nav-ele" style="font-size:22px ;">Keep an Eye</a></span>
+            <a href="myprop.html" class="nav-ele">My properties</a>
+            <a href="#" class="nav-ele">About</a>
+            <input type="text" placeholder="Search here" name="search" class="nav-ele" style="margin-left:40px;color: #cf0f3f ;"><button type="submit" class="nav-sea"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <!-- <a href="#" class="profile"  ><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></a> -->
+            <span class="dropdown" style="margin-left: 420px;"  >
+                <button  class="dropbtn"><i style="color: snow;" class=" fa fa-user" aria-hidden="true"></i></button>
+                <span id="myDropdown" class="dropdown-content">
+                  <a href="profile.html">Profile</a>
+                  <a href="login.html">Log out</a>
+                </span>
+            </span>
+              </div>
+        <div id="prop1">
+            <img id="p1" src="https://s3-ap-southeast-1.amazonaws.com/housingman-v2/projects/banner_images/1605/original/Raheja_Vistas-Banner.jpg?1481713803">
+            <p id="pd"><b>Site Name:</b><label>Raheja Vistas</label><br><br>
+            <b>Address:</b><label>Hyderabad</label><br><br>
+            <b>Owner:</b><label>xyz</label></p>
+            <button class="btn">Build</button>
+
+            <button class="btn">Sell</button>
+
+            <button class="btn">Click to view photos</button>   
+        </div>
+        <div id="prop1">
+            <img id="p1"src="https://s3-ap-southeast-1.amazonaws.com/housingman-v2/projects/banner_images/4208/original/F5_Green_County_Phase_2_-_Banner.jpg?1512739490">
+            <p id="pd"><b>Site Name:</b><label>Metro towers</label><br><br>
+            <b>Address:</b><label>Mumbai</label><br><br>
+            <b>Owner:</b><label>xyz</label></p>
+            <button class="btn">Build</button>
+
+            <button class="btn">Sell</button>
+
+            <button class="btn">Click to view photos</button>   
+        </div>
+    </body>
+</html>
